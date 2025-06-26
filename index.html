@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Test Vocacional Inteligente</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Test Vocacional</h1>
-  <div id="pregunta-container"></div>
-  <div id="opciones-container"></div>
-  <button id="btn-siguiente" onclick="siguientePregunta()">Siguiente</button>
-  <div id="resultado" style="display:none;"></div>
+  <div class="container">
+    <h1>Test Vocacional</h1>
+    
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+    
+    <p id="contador">Pregunta 1 de 50</p>
+
+    <div id="pregunta-container" class="fade"></div>
+    <div id="opciones-container" class="fade"></div>
+
+    <button id="btn-siguiente" onclick="siguientePregunta()">Siguiente</button>
+    <div id="resultado" class="fade" style="display:none;"></div>
+  </div>
 
   <script src="main.js"></script>
 </body>

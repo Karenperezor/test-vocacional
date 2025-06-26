@@ -1,14 +1,74 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
   padding: 20px;
+  color: #333;
 }
 
-#opciones-container {
-  margin-top: 10px;
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2b6777;
+}
+
+.fade {
+  transition: opacity 0.5s ease-in-out;
 }
 
 button {
+  background-color: #52ab98;
+  border: none;
+  color: white;
+  padding: 10px 20px;
   margin-top: 20px;
-  padding: 8px 12px;
   font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #3d8b7c;
+}
+
+.progress-container {
+  width: 100%;
+  background: #d3e0ea;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: #52ab98;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+#opciones-container button {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  background: #f7f7f7;
+  color: #333;
+  border: 2px solid #52ab98;
+  transition: background 0.3s ease;
+}
+
+#opciones-container button:hover {
+  background: #e0f5f0;
+}
+
+#resultado ul {
+  padding-left: 20px;
 }
